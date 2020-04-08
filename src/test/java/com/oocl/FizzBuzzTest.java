@@ -54,8 +54,7 @@ public class FizzBuzzTest {
         int lastPlayerNum = 20;
         String result = "";
         //when
-        for(int playerNum = firstPlayerNum; playerNum <= lastPlayerNum; playerNum++)
-            result += fizzBuzz.say(playerNum) + "\n";
+        result = fizzBuzz.playGame(firstPlayerNum,lastPlayerNum);
         //then
         assertThat(result,
                 is(
