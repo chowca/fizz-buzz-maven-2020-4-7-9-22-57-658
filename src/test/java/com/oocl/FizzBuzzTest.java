@@ -46,3 +46,5 @@ public class FizzBuzzTest {
         assertThat(result, is("FizzBuzz"));
     }
 }
+
+//All passed
