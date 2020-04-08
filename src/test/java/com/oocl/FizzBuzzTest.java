@@ -25,4 +25,14 @@ public class FizzBuzzTest {
         //then
         assertThat(result, is("Fizz"));
     }
+
+    @Test
+    public void should_return_Buzz_when_raw_number_is_divisible_by_5() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String result = fizzBuzz.say(5);
+        //then
+        assertThat(result, is("Buzz"));
+    }
 }
