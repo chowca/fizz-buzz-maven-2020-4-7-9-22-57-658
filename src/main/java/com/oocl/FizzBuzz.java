@@ -2,6 +2,6 @@ package com.oocl;
 
 public class FizzBuzz {
     public String say(int number){
-        return String.valueOf(0);
+        return String.valueOf(number);
     };
 }

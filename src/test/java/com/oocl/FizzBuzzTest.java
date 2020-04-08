@@ -3,7 +3,7 @@ package com.oocl;
 import org.junit.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static sun.nio.cs.Surrogate.is;
+import static org.hamcrest.core.Is.is;
 
 public class FizzBuzzTest {
     @Test
@@ -13,6 +13,6 @@ public class FizzBuzzTest {
         //when
         String result = fizzBuzz.say(1);
         //then
-        assertThat(result, is(1));
+        assertThat(result, is("1"));
     }
 }
