@@ -45,6 +45,41 @@ public class FizzBuzzTest {
         //then
         assertThat(result, is("FizzBuzz"));
     }
-}
 
-//All passed
+    @Test
+    public void should_play_the_game_correctly_from_firstPlayerNum_to_lastPlayerNum() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        int firstPlayerNum = 1;
+        int lastPlayerNum = 20;
+        String result = "";
+        //when
+        for(int playerNum = firstPlayerNum; playerNum <= lastPlayerNum; playerNum++)
+            result += fizzBuzz.say(playerNum) + "\n";
+        //then
+        assertThat(result,
+                is(
+                "1\n" +
+                "2\n" +
+                "Fizz\n" +
+                "4\n" +
+                "Buzz\n" +
+                "Fizz\n" +
+                "7\n" +
+                "8\n" +
+                "Fizz\n" +
+                "Buzz\n" +
+                "11\n" +
+                "Fizz\n" +
+                "13\n" +
+                "14\n" +
+                "FizzBuzz\n" +
+                "16\n" +
+                "17\n" +
+                "Fizz\n" +
+                "19\n" +
+                "Buzz\n"
+                )
+        );
+    }
+}
